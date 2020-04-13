@@ -7,7 +7,7 @@ a:hover
 */
 a.ex2:hover, a.ex2:active {font-size: 150%;}
 .bg-overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.212)), url("pic.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.212)), url("flower.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,5 +67,19 @@ body {
 }
 {
   box-sizing: border-box;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.demo .large-header {
+  background-image: url("BLOGO.png");
 }
 
