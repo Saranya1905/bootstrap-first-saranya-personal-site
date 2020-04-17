@@ -19,17 +19,29 @@ a.ex2:hover, a.ex2:active {font-size: 150%;}
   position: relative;
   width: 100%;
  }
+ 
  html {
   scroll-behavior: smooth;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+body{
+  overflow-x: hidden;
+}
+.text-center{
+  background-color: violet;
+  font-size: larger;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.heading{
+  background-color:gainsboro;
+  
+}
 .flip-box {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
@@ -65,21 +77,6 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
-{
-  box-sizing: border-box;
-}
 
-.large-header {
-  position: relative;
-  width: 100%;
-  background: #111;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  z-index: 1;
-}
 
-.demo .large-header {
-  background-image: url("BLOGO.png");
-}
 
