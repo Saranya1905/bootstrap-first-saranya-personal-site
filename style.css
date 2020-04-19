@@ -29,14 +29,16 @@ body {
 body{
   overflow-x: hidden;
 }
+.navbar{
+  background-color:#000000;
+}
 .text-center{
-  background-color: violet;
-  font-size: larger;
+  font-size: x-large;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .heading{
+  padding: 20px;
   background-color:gainsboro;
-  
 }
 .flip-box {
   background-color: transparent;
@@ -78,5 +80,16 @@ body{
   transform: rotateY(180deg);
 }
 
-
-
+@media screen and (min-width:601px)
+{
+  div.heading{
+    font-size: 80px;
+  }
+  
+@media screen and (min-width:600px)
+{
+  div.heading{
+    font-size: 30px;
+  }
+  
+ 
