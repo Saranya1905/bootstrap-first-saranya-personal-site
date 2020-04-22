@@ -1,30 +1,27 @@
 
-/*
-a:hover 
-{
-  background-color:gray;
-}
-*/
+
 a.ex2:hover, a.ex2:active {font-size: 150%;}
 .bg-overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.212)), url("flower.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center ;
   color: #fff;
   height: 600px;
   padding-top: 50px;
+  padding: 8rem 0rem;
+  box-sizing: border-box;
 }
  .overlay-image {
   position: relative;
   width: 100%;
  }
- 
  html {
   scroll-behavior: smooth;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 body{
   overflow-x: hidden;
@@ -38,7 +35,11 @@ body{
 }
 .heading{
   padding: 20px;
-  background-color:gainsboro;
+  box-sizing: border-box;
+}
+#home,#menu2,#menu4,#menu5{
+  background-color: black;
+  color: #f1f1f1;
 }
 .flip-box {
   background-color: transparent;
@@ -46,6 +47,7 @@ body{
   height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+  box-sizing: border-box;
 }
 
 .flip-box-inner {
@@ -55,6 +57,7 @@ body{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  box-sizing: border-box;
 }
 
 .flip-box:hover .flip-box-inner {
@@ -78,23 +81,34 @@ body{
   background-color: #555;
   color: white;
   transform: rotateY(180deg);
+  font-size: x-large;
 }
-
-@media screen and (min-width:601px)
-{
-  div.heading{
-    font-size: 80px;
-  }
-}  
-@media screen and (min-width:600px)
+@media screen and (min-width:900px)
 {
   div.heading{
     font-size: 30px;
+    width: auto;
    }
 }
 .footer{
   background-color: black;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
+ 
 }
-
+.caption{
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 2%;
+}
+.thumbnail{
+  position: relative;
+  padding:0px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+.thumbnail img{
+  height:100%;
+  width: auto;
+}
